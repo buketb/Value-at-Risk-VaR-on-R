@@ -53,4 +53,4 @@ plot(density(x))
 #Compare myVaR & Gaussian wriiten functions:
 myVaR(MSFT.Rend,0.99,1)
 
-myVaR(MSFT.Rend,0.99,1)
+VaR(MSFT.Rend, p = 0.99, method = "gaussian")
