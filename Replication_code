@@ -27,6 +27,7 @@ VaR(MSFT.Rend, p = 0.99, method = "gaussian")
 VaR(MSFT.Rend, p = 0.99, method = "modified")
 
 #my VaR function under the assumption of normal distribution of the return series
+#VaR = [ER – (Z*STD)] * P (portfolio value)
 myVaR <- function(Rend,alpha,P){
   sigma = sd(Rend)
   mu= mean(Rend)
