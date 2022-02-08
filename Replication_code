@@ -49,3 +49,7 @@ x <- rnorm(3757,0,0.0176)
 plot(density(x))
 
 
+#Compare myVaR & Gaussian wriiten functions:
+myVaR(MSFT.Rend,0.99,1)
+
+myVaR(MSFT.Rend,0.99,1)
