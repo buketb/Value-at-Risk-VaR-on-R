@@ -31,8 +31,7 @@ myVaR <- function(Rend,alpha,P){
   sigma = sd(Rend)
   mu= mean(Rend)
   var= -(mu+ qnorm(alpha)*sigma)*P
-  return(var)
-  
+  return(var)  
 }
 
 #plotting the density
@@ -42,7 +41,7 @@ ours <- autoplot(density(MSFT.Rend), fill = 'green')
 sd(MSFT.Rend)
 #[1] 0.01769151
 
-#one visialisation:
+#one visualisation:
 par(mfrow=c(2,1))
 plot(density(MSFT.Rend), xlim= c(-0.07, 0.07))
 set.seed(123)
